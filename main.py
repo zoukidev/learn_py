@@ -1,12 +1,9 @@
-from Chat import chat, author
+from config import load
 
 def start():
-    author_1 = author.Author("ZoukiDev")
-
-    chat_1 = chat.Chat("Chat 1")
-    chat_1.sendMessage(author_1, "Hello world")
-
+    load()
     print("Start app")
+
 
 if __name__ == "__main__":
     start()
